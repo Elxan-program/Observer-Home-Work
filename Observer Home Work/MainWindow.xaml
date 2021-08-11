@@ -1,0 +1,26 @@
+﻿<Window x:Class="Observer_Home_Work.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Observer_Home_Work"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Beige">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Label FontSize="20" Margin="5">Product Name</Label>
+            <TextBox FontSize="20" Margin="5" Name="Product_Txt_Box"></TextBox>
+            <Label Margin="5" FontSize="20">Gmail</Label>
+            <TextBox Margin="5" FontSize="20" Name="Gmail_Txt_Box"></TextBox>
+            <Button Margin="120,190,120,0" Name="Add_Btn" FontSize="25" BorderThickness="1" Click="Add_Btn_Click"  BorderBrush="Beige">Add</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <ListBox Height="345" Width="380" Name="MainListbox" BorderThickness="0" FontSize="20"></ListBox>
+            <Button Width="120" Height="45" Name="Notify_Btn" FontSize="25" HorizontalAlignment="Right" Click="Notify_Btn_Click" BorderThickness="1" BorderBrush="Beige" VerticalAlignment="Bottom" Margin="10">Notify</Button>
+        </StackPanel>
+    </Grid>
+</Window>
